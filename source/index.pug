@@ -9,13 +9,23 @@ html(lang="ru")
             link(rel="icon" type="image/x-icon" href="favicon.ico")
             link(rel="stylesheet" href="css/style.min.css")
     body
-        //- <div style="display:none">
-        //-     <include src="build/img/icons/sprite.svg"></include>
-        //- </div>
+        <div style="display:none">
+            <include src="build/img/icons/sprite.svg"></include>
+        </div>
         .container
             header.header
-                button.header__btn(type="button") Open pop-up button
+                a.header__btn(href="#popup") Open pop-up button
             main.main
+                .block-1.main__block
+                    - for (let i = 0; i < 5; i++)
+                        .block-1__item
+                .block-2.main__block
+                    - for (let i = 0; i < 4; i++)
+                        .block-2__item
             footer.footer
-
-        script(src='js/script.js')
+        .popup#popup
+            .popup__content
+                a.popup__btn(href="#", aria-label="popup-close")
+                    svg(width=13, height=15, aria-hidden="true")
+                        use(xlink:href="#icon-close")
+                p.popup__text Pop-up

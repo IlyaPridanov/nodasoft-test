@@ -4,11 +4,12 @@
     display: flex;
     align-items: center;
 
-    background-color: $footer-header-color;
+    background-color: $primary-color;
 }
 
 .header__btn {
-    @include btn();
+    @include hover();
+    display: block;
     padding: 8px 15px;
 
     font-size: 20px;
@@ -17,4 +18,8 @@
 
     background-color: $header-btn-color;
     border-radius: 5px;
+
+    @media screen and (max-width:$mobile-width) {
+        margin: 0 auto;
+    }
 }

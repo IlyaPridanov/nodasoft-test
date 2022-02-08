@@ -1,0 +1,15 @@
+.block-2 {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px;
+
+    background-color: $block-2-color;
+}
+
+.block-2__item {
+    height: 0;
+    padding-bottom: 78%;
+
+    background-color: $block-2-item-color;
+}
