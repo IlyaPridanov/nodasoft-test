@@ -1,0 +1,20 @@
+.header {
+    padding: 15px 30px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+
+    background-color: $footer-header-color;
+}
+
+.header__btn {
+    @include btn();
+    padding: 8px 15px;
+
+    font-size: 20px;
+    line-height: 1.1;
+    color: $white;
+
+    background-color: $header-btn-color;
+    border-radius: 5px;
+}

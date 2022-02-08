@@ -2,5 +2,3 @@
 
 // Modules
 
-//= modules/table.js
-//= modules/map.js
